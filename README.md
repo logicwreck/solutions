@@ -1,9 +1,14 @@
 Squid traffic counter script
+======
 
 1) About.
+
 2) Requirements.
+
 3) Installation.
+
 4) Usage.
+
 5) Copyright.
 
 1) About.
@@ -13,10 +18,15 @@ the user is blocked. Also it can reset the traffic used when needed(usually on m
 pretty slow-speed machine(only 2 GB RAM and a AMD Athlon(tm) II X2 220 Processor) with and IDE drive.
 
 2) Requirements.
+
 Python version 3.2.x with the pymysql package installed.
 Squid installed with the ability to connect to the mysql database.
 
 3) Installation.
+
+First get the package from git:
+
+git clone https://logicwreck@github.com/logicwreck/solutions.git -b squid_counter
 
 Assuming that squid was installed under /usr/local/squid/, and python version 3.2 under /usr/local/bin/python3.2 the next steps will need to be taken:
  a) Put the squid db auth script(squid_db_auth) into the squid libexec directory, in this case it will be /usr/local/squid/libexec
@@ -45,6 +55,7 @@ Assuming that squid was installed under /usr/local/squid/, and python version 3.
  the third will reset the traffic counters in the mysql database. 
 
 4) Usage.
+
  Sample usage is:
  Usage:/root/traficcount_squid/count_squidsql.py --logfile/-l [LogFile Path] --action/-a [parse|rotate|reset] --server/-s [servername]
  Where the LogFile Path is the logfile to be parsed.
@@ -52,6 +63,7 @@ Assuming that squid was installed under /usr/local/squid/, and python version 3.
  The servername is the server where squid is installed, this is done in order to manage more squid servers at once but needs additional configurations. The default will be localhost.
 
 5) Copyright.
+
 (The MIT License)
 
 Copyright ¿ 2012 alpha_man (Valerian Martin), email: zacccp@gmail.com
