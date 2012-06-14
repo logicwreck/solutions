@@ -29,18 +29,25 @@ First get the package from git:
 git clone https://logicwreck@github.com/logicwreck/solutions.git -b squid_counter
 
 Assuming that squid was installed under /usr/local/squid/, and python version 3.2 under /usr/local/bin/python3.2 the next steps will need to be taken:
+ 
  a) Put the squid db auth script(squid_db_auth) into the squid libexec directory, in this case it will be /usr/local/squid/libexec
+ 
  b) Put the squid configuration(squid.conf) into the /usr/local/squid/etc/ directory(or another directory that is used as the squid config directory)
+ 
  c) Create a database in mysql named squiddb, and assign it a user/password like:
  create database squiddb;
  GRANT ALL PRIVILEGES ON squiddb.* TO squid_user@localhost IDENTIFIED BY 'PASSWORD';
  flush privileges;
+ 
  d) Populate the squid database with the dump from squiddb.sql like:
  mysql -usquid_user -pPASSWORD squiddb < squiddb.sql
+ 
  e) Modify the line saying:
  auth_param basic program /usr/local/squid/libexec/squid_db_auth --user squid_user --password PASSWORD --md5 --persist
  in the squid configuration file to match the mysql squid user and password created.
+ 
  f) Launch Squid.
+ 
  g) Put the script itself(count_squidsql.py) into a directory from which you'll be running it, like into /root/traficcount_squid and configure the next lines there to match the correct mysql settings:
  login="squid_user"
  password="PASSWORD"
