@@ -18,7 +18,11 @@ Squid installed with the ability to connect to the mysql database.
 
 3) Installation.<br />
 First get the package from git:<br />
-git clone https://logicwreck@github.com/logicwreck/solutions.git -b squid_counter
+git clone https://logicwreck@github.com/logicwreck/solutions.git -b squid_counter<br />
+or from our website:<br />
+http://www.logicwreck.com/files/squid_counter-1.0.0.tar.gz<br />
+after which you need to unarchive it(in case it was downloaded from our site) by running:<br />
+tar xvfz squid_counter-1.0.0.tar.gz<br />
 
 Assuming that squid was installed under /usr/local/squid/, and python version 3.2 under /usr/local/bin/python3.2 the next steps will need to be taken:<br />
  a) Put the squid db auth script(squid_db_auth) into the squid libexec directory, in this case it will be /usr/local/squid/libexec<br />
