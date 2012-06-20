@@ -18,6 +18,10 @@ gem install fssm<br />
 
 Next you'll need to checkout the package from:<br />
 git clone https://github.com/logicwreck/solutions.git -b ftp_synchronize<br />
+or from our website:<br />
+http://www.logicwreck.com/files/ftp_synchronize-1.0.0.zip<br />
+after which you need to unarchive it(in case it was downloaded from our site) by running:<br />
+unzip ftp_synchronize-1.0.0.zip<br />
 
 After which you can move it to a location you want, like:<br />
 mv ftp_synchronize /opt/<br />
