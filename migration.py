@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.2
+#!/usr/bin/python
 
 #import pymysql, sys, subprocess, shutil, pwd, grp, os, gzip, re, socket, urllib.request, random, string, tarfile, socket, struct, fcntl
 import subprocess, sys, os, re, shutil, random, string, tarfile, pwd, grp 
