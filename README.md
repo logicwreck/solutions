@@ -17,7 +17,14 @@ mysqldump and mysql binaries present under /usr/bin/ , otherwise there will be a
 to the correct locations.
 
 3) Installation.<br />
-Just put it into some directory from where you'll be able to run easily run it.
+You'll need to checkout the package from:<br />
+git clone https://github.com/logicwreck/solutions.git -b wp_migration<br />
+or from our website:<br />
+http://www.logicwreck.com/files/wp_migration-1.0.0.zip<br />
+after which you need to unarchive it(in case it was downloaded from our site) by running:<br />
+unzip wp_migration-1.0.0.zip<br />
+
+Just put it into some directory from where you'll be able to run easily run it.<br />
 
 4) Usage.<br />
 Sample usage is:<br />
