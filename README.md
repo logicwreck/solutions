@@ -9,7 +9,7 @@ Squid traffic counter script
 
 1) About.<br />
 This is a simple python script made to parse the squid log file and update the mysql database configured for this with the traffic used on per user bases. If the traffic limit is fully used then
-the user is blocked. Also it can reset the traffic used when needed(usually on monthly bases). The script is optimized and the tests show that it can pars a 1 GB log file in 26-30 seconds on a
+the user is blocked. Also it can reset the traffic used when needed(usually on monthly bases). The script is optimized and the tests show that it can parse a 1 GB log file in 26-30 seconds on a
 pretty slow-speed machine(only 2 GB RAM and a AMD Athlon(tm) II X2 220 Processor) with and IDE drive.
 
 2) Requirements.<br />
